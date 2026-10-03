@@ -20,7 +20,7 @@ with col1:
 
  st.subheader("Primera App: Interfaces Multimodales")
  image = Image.open('Inter1.png')
- st.image(image, width=200)
+ st.image(image, width=190)
  st.write("Clase 6. En el siguiente enlace veremos nuestra primera app con Streamlit: texto, imagen, columnas, casillas y selectores.")
  url = "https://intro-a-interfaces-multimodales-7wefpdompzu8vap2tdsjxg.streamlit.app/#pantalla-de-seleccion-2-ranuras"
  st.write(f"Intro: [Enlace]({url})")
@@ -49,7 +49,7 @@ with col2:
 
  st.subheader("Análisis de Sentimientos")
  image = Image.open('emociones.png')
- st.image(image, width=200)
+ st.image(image, width=190)
  st.write("Clase 8. En el siguiente enlace veremos cómo analizar la polaridad y la subjetividad de un texto y reaccionar con una animación.")
  url = "https://sentimientosc8-fxe4fkwgdulxpkg5jwxu9k.streamlit.app/"
  st.write(f"Sentimientos: [Enlace]({url})")
@@ -65,7 +65,7 @@ with col2:
 with col3:
  st.subheader("Análisis de Texto: TF-IDF")
  image = Image.open('tf.png')
- st.image(image, width=200)
+ st.image(image, width=190)
  st.write("Clase 8. En el siguiente enlace veremos cómo calcular TF-IDF para medir la importancia de los términos en textos en español.")
  url = "https://tdfespc8-6nbr9smosu5gbih2cphtuz.streamlit.app/"
  st.write(f"TF-IDF: [Enlace]({url})")

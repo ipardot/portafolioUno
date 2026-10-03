@@ -1,5 +1,83 @@
 import streamlit as st
 from PIL import Image
+
+st.set_page_config(page_title="Interfaces Multimodales", page_icon="🎙️", layout="wide")
+
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+  --bg:#0b1020; --card:#141a33; --card2:#1b2347; --line:#2a3563;
+  --violet:#8b7bff; --cyan:#4de1ff; --coral:#ff6b81; --text:#e8ecff; --muted:#aab3d9;
+}
+
+/* Fondo con brillos suaves */
+.stApp{
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(139,123,255,.25), transparent 60%),
+    radial-gradient(800px 500px at 100% 0%, rgba(77,225,255,.18), transparent 60%),
+    var(--bg);
+  color:var(--text);
+  font-family:'Poppins',sans-serif;
+}
+header[data-testid="stHeader"]{background:transparent;}
+
+/* Título principal con degradado */
+h1{
+  font-family:'Poppins',sans-serif !important; font-weight:700 !important;
+  background:linear-gradient(90deg,var(--cyan),var(--violet) 55%,var(--coral));
+  -webkit-background-clip:text; background-clip:text; color:transparent !important;
+  padding-bottom:.2rem;
+}
+
+/* Subtítulos */
+h2,h3{font-family:'Poppins',sans-serif !important; color:var(--text) !important; font-weight:600 !important;}
+h3{font-size:1.1rem !important; line-height:1.35 !important; min-height:3rem;}  /* 2 líneas reservadas */
+h1 a, h2 a, h3 a{display:none !important;}  /* oculta el ícono de ancla */
+
+/* Texto */
+p, li, label, [data-testid="stMarkdownContainer"]{color:var(--muted);}
+[data-testid="stMarkdownContainer"] p{font-size:.92rem; line-height:1.5;}
+
+/* Enlaces */
+a{color:var(--cyan) !important; text-decoration:none !important; font-weight:600;}
+a:hover{color:var(--coral) !important; text-decoration:underline !important;}
+
+/* Cada columna se convierte en una tarjeta */
+[data-testid="stHorizontalBlock"] > [data-testid="stColumn"],
+[data-testid="stHorizontalBlock"] > [data-testid="column"]{
+  background:linear-gradient(180deg,var(--card),var(--card2));
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:1.2rem 1.2rem 1.4rem;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+[data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:hover,
+[data-testid="stHorizontalBlock"] > [data-testid="column"]:hover{
+  transform:translateY(-4px);
+  border-color:var(--violet);
+  box-shadow:0 16px 40px rgba(139,123,255,.25);
+}
+
+/* Imágenes centradas, con bordes redondeados (también compensa 190 vs 200 px) */
+[data-testid="stImage"]{display:flex; justify-content:center; margin:.4rem 0 .8rem;}
+[data-testid="stImage"] img{
+  border-radius:16px;
+  border:1px solid var(--line);
+  box-shadow:0 6px 18px rgba(0,0,0,.4);
+}
+
+/* Barra lateral */
+section[data-testid="stSidebar"]{
+  background:linear-gradient(180deg,#10163a,#0b1020);
+  border-right:1px solid var(--line);
+}
+section[data-testid="stSidebar"] h3{min-height:0; color:var(--cyan) !important;}
+</style>
+""", unsafe_allow_html=True)
+
 st.title("Aplicaciones de Interfaces Multimodales.")
 
 with st.sidebar:

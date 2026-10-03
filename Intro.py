@@ -18,68 +18,68 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
 
- st.subheader("Primera App: Interfaces Multimodales")
+ st.subheader("Primera app multimodal")
  image = Image.open('Inter1.png')
  st.image(image, width=190)
- st.write("Clase 6. En el siguiente enlace veremos nuestra primera app con Streamlit: texto, imagen, columnas, casillas y selectores.")
+ st.write("Clase 6. Nuestra primera app con Streamlit: texto, imagen, columnas, casillas y selectores en una sola interfaz.")
  url = "https://intro-a-interfaces-multimodales-7wefpdompzu8vap2tdsjxg.streamlit.app/#pantalla-de-seleccion-2-ranuras"
  st.write(f"Intro: [Enlace]({url})")
 
  st.subheader("Conversión de texto a voz")
  image = Image.open('textovoz.png')
  st.image(image, width=200)
- st.write("Clase 6. En el siguiente enlace veremos la app de interfaces multimodales que convierte el texto que escribes en audio usando gTTS.")
+ st.write("Clase 6. App que convierte el texto que escribes en audio con gTTS, la base de las interfaces multimodales.")
  url = "https://au3bnnhwkgd5myvtms6dfm.streamlit.app/"
  st.write(f"Texto a voz: [Enlace]({url})")
 
  st.subheader("Traductor por voz")
  image = Image.open('traductor.png')
  st.image(image, width=200)
- st.write("Clase 7. En el siguiente enlace veremos una aplicación que convierte la voz en texto, lo traduce a otro idioma y lo reproduce en audio.")
+ st.write("Clase 7. Convierte tu voz en texto, lo traduce a otro idioma y lo reproduce en audio con el acento elegido.")
  url = "https://traductor-mcnljjfcbyyqgygapvgpfs.streamlit.app/"
  st.write(f"Traductor: [Enlace]({url})")
 
 with col2:
- st.subheader("Reconocimiento Óptico de Caracteres")
+ st.subheader("Lectura de texto con OCR")
  image = Image.open('OCR.png')
  st.image(image, width=200)
- st.write("Clase 7. En los siguientes enlaces veremos cómo extraer texto de imágenes con OCR y cómo combinarlo con la conversión de texto a audio.")
+ st.write("Clase 7. Extrae el texto de una imagen con OCR y lo deja listo para copiar o analizar. OCR con audio: [Enlace](https://ocr-audio-973gqmmbmmxenjkvrkzard.streamlit.app/)")
  url = "https://agxi6ywcfrblrj2ndtdnmz.streamlit.app/"
- st.write(f"OCR: [Enlace]({url}) · OCR con audio: [Enlace](https://ocr-audio-973gqmmbmmxenjkvrkzard.streamlit.app/)")
+ st.write(f"OCR: [Enlace]({url})")
 
- st.subheader("Análisis de Sentimientos")
+ st.subheader("Análisis de sentimientos")
  image = Image.open('emociones.png')
  st.image(image, width=190)
- st.write("Clase 8. En el siguiente enlace veremos cómo analizar la polaridad y la subjetividad de un texto y reaccionar con una animación.")
+ st.write("Clase 8. Mide la polaridad y la subjetividad de un texto y reacciona con una animación según el resultado.")
  url = "https://sentimientosc8-fxe4fkwgdulxpkg5jwxu9k.streamlit.app/"
  st.write(f"Sentimientos: [Enlace]({url})")
 
- st.subheader("Nube de Palabras")
+ st.subheader("Nube de palabras")
  image = Image.open('nube.png')
  st.image(image, width=200)
- st.write("Clase 8. En el siguiente enlace veremos cómo visualizar la frecuencia de las palabras de un texto con una nube de palabras.")
+ st.write("Clase 8. Muestra con una nube de palabras cuáles términos se repiten más en un texto y qué tan frecuentes son.")
  url = "https://wordcloudc8-ee6oaebcyqvww7fnennmva.streamlit.app/"
  st.write(f"Nube de palabras: [Enlace]({url})")
 
 
 with col3:
- st.subheader("Análisis de Texto: TF-IDF")
+ st.subheader("Análisis de texto TF-IDF")
  image = Image.open('tf.png')
  st.image(image, width=190)
- st.write("Clase 8. En el siguiente enlace veremos cómo calcular TF-IDF para medir la importancia de los términos en textos en español.")
+ st.write("Clase 8. Calcula TF-IDF para medir qué tan importantes son los términos en textos escritos en español.")
  url = "https://tdfespc8-6nbr9smosu5gbih2cphtuz.streamlit.app/"
  st.write(f"TF-IDF: [Enlace]({url})")
 
- st.subheader("Reconocimiento de Objetos")
+ st.subheader("Reconocimiento de objetos")
  image = Image.open('reconocimientoObj.png')
  st.image(image, width=200)
- st.write("Clase 9. En el siguiente enlace veremos cómo YOLO detecta y clasifica los objetos de una imagen en una sola pasada.")
+ st.write("Clase 9. YOLO detecta y clasifica todos los objetos de una imagen en una sola pasada y los marca en la foto.")
  url = "https://yolov5c9-uzcaomnbwg4wbok958iq9t.streamlit.app/"
  st.write(f"YOLO: [Enlace]({url})")
 
- st.subheader("Entrenando Modelos")
+ st.subheader("Entrenando modelos")
  image = Image.open('entrenamiento.png')
  st.image(image, width=200)
- st.write("Clase 9. En el siguiente enlace veremos cómo usar un modelo entrenado con Teachable Machine para reconocer patrones en fotos tomadas con la cámara.")
+ st.write("Clase 9. Usa un modelo de Teachable Machine para reconocer patrones en fotos tomadas con la cámara.")
  url = "https://er58appxjtynyhlnj8f6qme.streamlit.app/"
  st.write(f"Teachable Machine: [Enlace]({url})")

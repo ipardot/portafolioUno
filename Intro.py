@@ -161,3 +161,54 @@ with col3:
  st.write("Clase 9. Usa un modelo de Teachable Machine para reconocer patrones en fotos tomadas con la cámara.")
  url = "https://er58appxjtynyhlnj8f6qme.streamlit.app/"
  st.write(f"Teachable Machine: [Enlace]({url})")
+
+# Clases 11, 12 y 13 (las imágenes se agregan cuando estén listas)
+col4, col5, col6 = st.columns(3)
+
+with col4:
+ st.subheader("Minecraft Wiki con PDF")
+ st.write("Clase 11. Sube un PDF de Minecraft y hazle preguntas: la IA busca la respuesta dentro del documento con LangChain y OpenAI.")
+ url = "https://chatpdf-pnqny9ux3rjr8r4bzygvuo.streamlit.app/"
+ st.write(f"Chat PDF: [Enlace]({url})")
+
+ st.subheader("Chef de Nevera")
+ st.write("Clase 11. Toma una foto de tu nevera o tus ingredientes y GPT-4o describe lo que ve para ayudarte a decidir qué cocinar.")
+ url = "https://visionapp-l6qupsjcmkdkrsbfyeide3.streamlit.app/"
+ st.write(f"Visión: [Enlace]({url})")
+
+ st.subheader("Aprendo los Números")
+ st.write("Clase 12. Los niños escriben un número a mano y una red neuronal entrenada con MNIST les dice qué número ve.")
+ url = "https://mnistpred-cnuj7v69vry3kktrsycp3t.streamlit.app/"
+ st.write(f"MNIST: [Enlace]({url})")
+
+with col5:
+ st.subheader("¿Adivinas qué dibujé?")
+ st.write("Clase 12. Dibuja en un tablero personalizable y la IA intenta adivinar qué representa tu boceto.")
+ url = "https://aldroneada-sajnrk68fphhzqhro8dari.streamlit.app/"
+ st.write(f"Tablero inteligente: [Enlace]({url})")
+
+ st.subheader("Tablero para dibujo")
+ st.write("Clase 12. Tablero de dibujo libre: elige el tamaño, la herramienta, el grosor y los colores desde la barra lateral.")
+ url = "https://libreeeee.streamlit.app/"
+ st.write(f"Tablero libre: [Enlace]({url})")
+
+ st.subheader("Cuentos para dormir")
+ st.write("Clase 12. Dibuja a un personaje, la IA lo describe y después escribe un cuento infantil sobre él.")
+ url = "https://histinf-t76hzenb3htqegvl6pacgo.streamlit.app/"
+ st.write(f"Cuentos: [Enlace]({url})")
+
+with col6:
+ st.subheader("Control de la Cava")
+ st.write("Clase 13. Enciende la luz y ajusta la ventilación de una cava enviando órdenes por MQTT a un ESP32 con un LED y un servomotor.")
+ url = "https://sendcmqtt-9oazjydgnfo25hzcrggmfo.streamlit.app/"
+ st.write(f"Control MQTT: [Enlace]({url})")
+
+ st.subheader("Cava de Vinos")
+ st.write("Clase 13. Recibe por MQTT la temperatura y la humedad que mide un sensor DHT22 conectado a un ESP32.")
+ url = "https://recepmqtt-et9f6rixknatvgzvhajnnp.streamlit.app/"
+ st.write(f"Lectura MQTT: [Enlace]({url})")
+
+ st.subheader("Cava por Voz")
+ st.write("Clase 13. Controla la luz y la puerta de la cava con la voz: el texto reconocido viaja por MQTT hasta el ESP32.")
+ url = "https://cavaporvoz.streamlit.app/"
+ st.write(f"Control por voz: [Enlace]({url})")
